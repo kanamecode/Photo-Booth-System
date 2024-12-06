@@ -14,7 +14,7 @@
   <tr>
     <td align="center">
       <a href="https://www.youtube.com/shorts/ul3hGIHvoWw">
-        <img src="https://img.youtube.com/vi/ul3hGIHvoWw/hqdefault.jpg" alt="文化祭での使用例 - 動画を見る" width="300">
+        <img src="https://img.youtube.com/vi/ul3hGIHvoWw/hqdefault.jpg" alt="文化祭での使用例 - 動画を見る" width="600">
       </a>
       <p>🎥 動画を見る</p>
     </td>

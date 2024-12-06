@@ -1,6 +1,7 @@
 # 📸 本格的なフォトブースシステム‼　教育機関向けに無償提供中✨
 
 実際に高校の文化祭で使われました。
+この画像はYouTube動画のリンクになっています。画像をクリックすると実際に文化祭で使われた様子が見られます
 [![Shorts Video](https://img.youtube.com/vi/ul3hGIHvoWw/hqdefault.jpg)](https://www.youtube.com/shorts/ul3hGIHvoWw)
 
 

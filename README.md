@@ -45,9 +45,9 @@
 
 ---
 
-## 📥 ダウンロード & インストール
+## 📥 ダウンロード
 
-1. [最新リリース](https://github.com/your-repo-name/releases) からアプリをダウンロード。
+1. [利用申請](https://forms.gle/zBkWD56zqQSj91559) ＜フォームから利用申請をお願いします。利用申請が完了し、条件を満たしている者と確認できましたら1週間以内に入力されたメールアドレス宛にダウンロードリンクを送付します。
 2. ダウンロードしたZIPファイルを解凍。
 3. `PhotoBooth.exe` をダブルクリックで起動。
 
@@ -73,19 +73,8 @@
 ## 🌟 今後の予定
 
 - 多言語対応
-- 追加スタンプの配信
+- スタンプ機能の追加
 - リアルタイムでのエフェクト適用機能
 
 ---
 
-## 🛠️ 開発者向け情報
-
-### 必要なツール
-
-- [Visual Studio](https://visualstudio.microsoft.com/)
-- [.NET 6](https://dotnet.microsoft.com/)
-
-### クローン方法
-
-```bash
-git clone https://github.com/your-repo-name.git

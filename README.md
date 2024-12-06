@@ -1,6 +1,8 @@
 # 📸 本格的なフォトブースシステム‼　教育機関向けに無償提供中✨
 
 実際に高校の文化祭で使われました。
+[![Shorts Video](https://img.youtube.com/vi/ul3hGIHvoWw/hqdefault.jpg)](https://www.youtube.com/shorts/ul3hGIHvoWw)
+
 
 🎉 **文化祭などで使える本格的なフォトブースシステムアプリです。**  
 ゲームセンターにあるあの撮影機械を文化祭等で本格再現・運用できます！

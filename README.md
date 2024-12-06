@@ -12,7 +12,7 @@
 
 | 動画                                           | 出来上がり写真の例                            |
 |-----------------------------------------------|---------------------------------------------|
-| [![文化祭での使用例 - 動画を見る](https://img.youtube.com/vi/ul3hGIHvoWw/hqdefault.jpg)](https://www.youtube.com/shorts/ul3hGIHvoWw) | ![完成写真例](assets/photo_sample.jpg) |
+| [![文化祭での使用例 - 動画を見る](https://img.youtube.com/vi/ul3hGIHvoWw/hqdefault.jpg)](https://www.youtube.com/shorts/ul3hGIHvoWw) | ![完成写真例](assets/photo_sample.jpeg) |
 
 
 

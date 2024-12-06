@@ -10,10 +10,20 @@
 ## 実際に高校の文化祭で使用され、約500人の来場者に撮影して頂き大盛況でした！  
 >下の画像をクリックすると、文化祭で使われた様子を動画でご覧いただけます 🎥👇
 
-| 動画                                           | 出来上がり写真の例                            |
-|-----------------------------------------------|---------------------------------------------|
-| [![文化祭での使用例 - 動画を見る](https://img.youtube.com/vi/ul3hGIHvoWw/hqdefault.jpg)](https://www.youtube.com/shorts/ul3hGIHvoWw) | ![完成写真例](assets/photo_sample.jpeg) |
-
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.youtube.com/shorts/ul3hGIHvoWw">
+        <img src="https://img.youtube.com/vi/ul3hGIHvoWw/hqdefault.jpg" alt="文化祭での使用例 - 動画を見る" width="300">
+      </a>
+      <p>🎥 動画を見る</p>
+    </td>
+    <td align="center">
+      <img src="assets/photo_sample.jpg" alt="完成写真例" width="300">
+      <p>📸 完成写真例</p>
+    </td>
+  </tr>
+</table>
 
 
 ---

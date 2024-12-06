@@ -19,7 +19,7 @@
       <p>🎥 動画を見る</p>
     </td>
     <td align="center">
-      <img src="assets/photo_sample.jpg" alt="完成写真例" width="300">
+      <img src="assets/photo_sample.jpeg" alt="完成写真例" width="300">
       <p>📸 完成写真例</p>
     </td>
   </tr>

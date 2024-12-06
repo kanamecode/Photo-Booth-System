@@ -105,7 +105,7 @@
       <p>⚙️ 設定画面</p>
     </td>
     <td align="center">
-      <img src="assets/customize.png" alt="フレーム選択画面" width="300">
+      <img src="assets/customize.png" alt="フレーム選択画面" width="600">
       <p>🖼️ フレーム選択画面</p>
     </td>
   </tr>

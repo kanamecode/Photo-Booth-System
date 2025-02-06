@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本格的なフォトブースシステム</title>
+    <style>
+        body {
+            background-color: #2f2f2f;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffcc00;
+        }
+
+        h2,
+        h3 {
+            color: #ffcc00;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffcc00;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .section-title {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #2f2f2f;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .download-btn:hover {
+            background-color: #ff9933;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+            .content-container {
+                padding: 10px;
+            }
+
+            table,
+            th,
+            td {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+
+            .download-btn {
+                font-size: 1em;
+                padding: 8px 15px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-container">
+        <h1>📸 本格的なフォトブースシステム‼</h1>
+        <h2>🎓教育機関向けに無償提供中✨</h2>
+        <p>🎉
+            <strong>文化祭などで使える本格的なフォトブースシステムアプリです。</strong><br>ゲームセンターにあるあの撮影機械を文化祭等で本格再現・運営できます！簡単操作で写真を撮影し、作成可能なオリジナルフレームを選択すると合成されます。合成された画像はQRコードでスマホに保存したり、プリンターと接続することで自動で印刷できます！
+        </p>
+
+        <h3>実際に高校の文化祭で使用され、約500人の来場者に撮影して頂き大盛況でした！</h3>
+        <table>
+            <tr>
+                <td style="width: 50%; padding: 0;">
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 177.78%; overflow: hidden;">
+                        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                            src="https://www.youtube.com/embed/ul3hGIHvoWw" title="文化祭での使用例 - 動画を見る" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <p><a href="https://www.youtube.com/watch?v=ul3hGIHvoWw" target="_blank">🎥
+                            動画を見る</a></p>
+                </td>
+
+                <td style="width: 50%; padding: 0;">
+                    <img src="assets/photo_sample.jpeg" alt="完成写真例" width="100%" style="height: auto;">
+                    <p>📸 完成写真例</p>
+                </td>
+            </tr>
+        </table>
+
+
+        <div class="section-title">🚀 特徴</div>
+        <ul class="feature-list">
+            <li>本格的で使いやすいUI：初めての人でも簡単に操作可能！</li>
+            <li>カスタマイズ可能なフレーム：透過PNG画像でオリジナルフレームを作成可能</li>
+            <li>自動印刷 ＆ QRコードで画像受け取り対応：Wi-Fiで接続された端末にQRコードを読み取ることでデータを受け取れる</li>
+            <li>強固なセキュリティ：撮影した写真は撮影終了後に削除され、暗号化でセキュリティを確保</li>
+            <li>学校の端末に対応：インストール不要で管理者権限なしでも使用可能</li>
+        </ul>
+
+        <div class="section-title">🖥️ 動作環境</div>
+        <table>
+            <tr>
+                <th>項目</th>
+                <th>必要スペック</th>
+                <th>推奨スペック</th>
+            </tr>
+            <tr>
+                <td>OS</td>
+                <td>Windows 10 (64bit)</td>
+                <td>Windows 10/11 (64bit)</td>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td>Intel Core i5 以上</td>
+                <td>Intel Core i7 以上</td>
+            </tr>
+            <tr>
+                <td>メモリ</td>
+                <td>4GB 以上</td>
+                <td>8GB 以上</td>
+            </tr>
+            <tr>
+                <td>ストレージ</td>
+                <td>1GB 以上の空き容量</td>
+                <td>1GB 以上の空き容量</td>
+            </tr>
+            <tr>
+                <td>ディスプレイ</td>
+                <td>1280x720 以上の解像度</td>
+                <td>1920x1080 フルHD</td>
+            </tr>
+            <tr>
+                <td>カメラ</td>
+                <td>USB カメラ、または内蔵カメラ</td>
+                <td>高解像度USBカメラ、スマートフォンのカメラ</td>
+            </tr>
+        </table>
+
+        <div class="section-title">📥 ダウンロード</div>
+        <p>フォームから利用申請をお願いします。<br>利用申請が完了し、利用者資格を満たしている者と確認できましたら、入力されたメールアドレス宛にダウンロードリンクを送付します。</p>
+        <p>⚠️現在提供準備中です。</p>
+        <a class="download-btn" href="https://forms.gle/zBkWD56zqQSj91559">➡ 利用申請はこちら</a>
+
+        <div class="section-title">利用者条件・規約</div>
+        <p>本システムは、以下の条件を満たす教育機関の関係者に提供されます。</p>
+
+        <ol>
+            <li><strong>利用者資格</strong><br>利用者は、以下の条件を満たす者に限られます：<br>
+                教育機関に所属している者（例：高校、大学、専門学校等の教職員または学生）<br>
+                非営利目的での使用に限ります。本システムは営利目的で使用することはできません。
+            </li>
+            <li><strong>ライセンス</strong><br>本システムの全ての著作権およびライセンスは、提供者に帰属します。<br>
+                教育機関に所属する者に対してのみ使用許可を与えます。営利目的での使用は禁じられています。<br>
+                改変禁止: 本システムのソースコードや構成を変更、再配布することはできません。
+            </li>
+            <li><strong>使用範囲</strong><br>本システムは、教育機関内での使用に限られ、個人または営利団体への提供はできません。<br>
+                教育機関のイベントや活動においてのみ使用を許可します。<br>
+                使用においては、以下の制限があります：<br>
+                文化祭・その他イベントにおける費用回収は、印刷用紙代、インク代、装飾費用等、実際にかかった経費を超えてはいけません。過剰な金額を回収することは禁止されています。
+            </li>
+            <li><strong>禁止事項</strong><br>本システムの商業目的での利用、販売、配布は禁止されています。<br>
+                教育機関外での利用、または教育機関以外の個人による使用は認められていません。<br>
+                申請された機関以外の第三者には提供できません。<br>
+                本システムを改変、再配布、または商業的な目的で使用することは固く禁止されています。<br>
+                本規約を遵守し、適切な利用をお願いいたします。
+            </li>
+        </ol>
+
+        <div class="section-title">⚠️ 免責事項</div>
+        <p>本システムは教育機関向けに無償提供されており、利用に際して以下の点をご理解ください。</p>
+
+        <ol>
+            <li><strong>損害について</strong><br>本システムの使用または使用不能から生じる、いかなる直接的・間接的な損害についても、開発者は一切の責任を負いません。</li>
+            <li><strong>データの管理について</strong><br>本システムを利用することで作成・保存された画像データの管理は利用者の責任で行ってください。<br>
+                万が一、画像データの流出や不正利用が発生した場合でも、開発者は責任を負いかねます。
+            </li>
+            <li><strong>システムの安定性について</strong><br>本システムは十分なテストを行ったうえで公開されていますが、完全な動作を保証するものではありません。<br>
+                不具合やエラーが発生した場合、開発者はその修正義務を負うものではありません。
+            </li>
+            <li><strong>使用条件</strong><br>本システムを利用することで、上記免責事項に同意したものとみなします。</li>
+        </ol>
+
+        <p><span style="color: rgb(255, 83, 83);"><strong>注意</strong></span><br>
+           本システムの利用前に、個人情報や画像データの取り扱いについて十分ご確認ください。<br>
+           教育機関やイベント主催者が適切なセキュリティ対策を講じることを推奨します。</p>
+         
+
+        <footer>
+            <p>質問・お問い合わせは、メールでご連絡ください。</p>
+            <p>✉️ <a href="mailto:bueno114bs@gmail.com">bueno114bs@gmail.com</a></p>
+            <p>&copy; 2024 kanamecode<br> All Rights Reserved.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

@@ -6,132 +6,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>本格的なフォトブースシステム</title>
     <style>
-        body {
-            background-color: #2f2f2f;
-            color: #ffffff;
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
-        h1,
-        h2,
-        h3,
-        p {
-            margin: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #ffcc00;
-        }
-
-        h2,
-        h3 {
-            color: #ffcc00;
-        }
-
-        table {
-            width: 100%;
-            margin: 20px 0;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #555;
-        }
-
-        a {
-            text-decoration: none;
-            color: #ffcc00;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        img {
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            min-height: 100vh;
         }
 
         .content-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
-        .feature-list {
-            list-style-type: none;
-            padding: 0;
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        .feature-list li {
-            margin: 10px 0;
+        h2 {
+            text-align: center;
+            color: #ff6b6b;
+            font-size: 1.8em;
+            margin: 30px 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        h3 {
+            color: #4ecdc4;
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            border-left: 4px solid #4ecdc4;
+            padding-left: 15px;
+        }
+
+        p {
+            margin: 20px 0;
             font-size: 1.1em;
+            text-align: justify;
+            line-height: 1.8;
         }
 
         .section-title {
-            background-color: #444;
-            padding: 10px;
-            border-radius: 8px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            border-radius: 15px;
             color: #fff;
-            font-size: 1.5em;
-            margin-top: 30px;
+            font-size: 1.6em;
+            margin: 40px 0 20px 0;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .feature-list li {
+            margin: 15px 0;
+            font-size: 1.15em;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .feature-list li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+            color: #ffd700;
+            font-size: 1.2em;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        table {
+            width: 100%;
+            margin: 25px 0;
+            border-collapse: collapse;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        th {
+            padding: 18px 15px;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.1em;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+
+        td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4ecdc4;
+            font-weight: 500;
         }
 
         .download-btn {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #ffcc00;
-            color: #2f2f2f;
-            border-radius: 8px;
+            padding: 15px 35px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: #fff;
+            border-radius: 50px;
             text-align: center;
-            font-size: 1.2em;
-            margin-top: 20px;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 30px 0;
+            box-shadow: 0 8px 25px rgba(238,90,36,0.4);
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .download-btn:hover {
-            background-color: #ff9933;
+        img {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        iframe {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        ol {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            padding: 25px 30px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        ol li {
+            margin: 15px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        ol li:last-child {
+            border-bottom: none;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #444;
-            margin-top: 40px;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            margin-top: 60px;
+            border-top: 3px solid #4ecdc4;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.3);
         }
 
         footer a {
-            color: #ffcc00;
+            color: #4ecdc4;
             text-decoration: none;
+            font-weight: 600;
         }
 
-        footer a:hover {
-            text-decoration: underline;
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 177.78%;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(255,107,107,0.1) 0%, rgba(78,205,196,0.1) 100%);
+            border: 1px solid rgba(255,107,107,0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
         }
 
         @media screen and (max-width: 768px) {
             .content-container {
-                padding: 10px;
+                padding: 20px 15px;
             }
 
-            table,
-            th,
-            td {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            table, th, td {
                 font-size: 0.9em;
-                padding: 8px;
+                padding: 10px 8px;
             }
 
             .download-btn {
-                font-size: 1em;
-                padding: 8px 15px;
+                font-size: 1.1em;
+                padding: 12px 25px;
             }
 
+            .section-title {
+                font-size: 1.4em;
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .feature-list, ol {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 0.8em;
+            }
+
+            th, td {
+                padding: 8px 5px;
+            }
         }
     </style>
 </head>
@@ -139,16 +274,22 @@
 <body>
     <div class="content-container">
         <h1>📸 本格的なフォトブースシステム‼</h1>
+        
+        <!-- macOS対応告知 -->
+        <div style="background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%); padding: 20px; border-radius: 15px; text-align: center; margin: 30px 0; color: #fff; font-size: 1.2em; font-weight: 600; box-shadow: 0 8px 25px rgba(78,205,196,0.3);">
+            🍎 <strong>NEW!</strong> 2025/08アップデート macOS対応・より使いやすいUI・幅広い端末に対応
+        </div>
+        
         <h2>🎓教育機関向けに無償提供中✨</h2>
         <p>🎉
-            <strong>文化祭などで使える本格的なフォトブースシステムアプリです。</strong><br>ゲームセンターにあるあの撮影機械を文化祭等で本格再現・運営できます！簡単操作で写真を撮影し、作成可能なオリジナルフレームを選択すると合成されます。合成された画像はQRコードでスマホに保存したり、プリンターと接続することで自動で印刷できます！
+            <strong>文化祭などで使える本格的なフォトブースシステムアプリです。</strong><br>流行りの無加工で撮るあの撮影機械を文化祭等で本格再現・運営できます！簡単操作で写真を撮影し、作成可能なオリジナルフレームを選択すると合成されます。合成された画像はQRコードでスマホに保存したり、プリンターと接続することで自動で印刷できます！
         </p>
 
         <h3>実際に高校の文化祭で使用され、約500人の来場者に撮影して頂き大盛況でした！</h3>
         <table>
             <tr>
                 <td style="width: 50%; padding: 0;">
-                    <div style="position: relative; width: 100%; height: 0; padding-top: 177.78%; overflow: hidden;">
+                    <div class="video-container">
                         <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
                             src="https://www.youtube.com/embed/ul3hGIHvoWw" title="文化祭での使用例 - 動画を見る" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -171,76 +312,82 @@
             <li>本格的で使いやすいUI：初めての人でも簡単に操作可能！</li>
             <li>カスタマイズ可能なフレーム：透過PNG画像でオリジナルフレームを作成可能</li>
             <li>自動印刷 ＆ QRコードで画像受け取り対応：Wi-Fiで接続された端末にQRコードを読み取ることでデータを受け取れる</li>
-            <li>強固なセキュリティ：撮影した写真は撮影終了後に削除され、暗号化でセキュリティを確保</li>
-            <li>学校の端末に対応：インストール不要で管理者権限なしでも使用可能</li>
+            <li>プライバシー保護 & セキュリティ：撮影画像は処理後に自動完全削除。暗号化により運営者・来場者ともに安心</li>
         </ul>
 
         <div class="section-title">🖥️ 動作環境</div>
         <table>
             <tr>
                 <th>項目</th>
-                <th>必要スペック</th>
+                <th>最低スペック</th>
                 <th>推奨スペック</th>
             </tr>
             <tr>
                 <td>OS</td>
-                <td>Windows 10 (64bit)</td>
-                <td>Windows 10/11 (64bit)</td>
+                <td>Windows 10 (64bit) / macOS 10.15 (Catalina) 以上</td>
+                <td>Windows 11 (64bit) / macOS 12.0 (Monterey) 以上</td>
             </tr>
             <tr>
                 <td>CPU</td>
-                <td>Intel Core i5 以上</td>
-                <td>Intel Core i7 以上</td>
+                <td>Intel Core i3 第8世代 / AMD Ryzen 3 以上</td>
+                <td>Intel Core i5 第10世代 / AMD Ryzen 5 / Apple M1 以上</td>
             </tr>
             <tr>
                 <td>メモリ</td>
-                <td>4GB 以上</td>
-                <td>8GB 以上</td>
+                <td>4GB RAM</td>
+                <td>8GB RAM 以上</td>
             </tr>
             <tr>
                 <td>ストレージ</td>
-                <td>1GB 以上の空き容量</td>
-                <td>1GB 以上の空き容量</td>
+                <td>2GB 以上の空き容量</td>
+                <td>5GB 以上の空き容量</td>
             </tr>
             <tr>
                 <td>ディスプレイ</td>
-                <td>1280x720 以上の解像度</td>
-                <td>1920x1080 フルHD</td>
+                <td>1280x720 (HD) 以上</td>
+                <td>1920x1080 (Full HD) 以上</td>
             </tr>
             <tr>
                 <td>カメラ</td>
-                <td>USB カメラ、または内蔵カメラ</td>
-                <td>高解像度USBカメラ、スマートフォンのカメラ</td>
+                <td>720p HD対応 USB/内蔵カメラ</td>
+                <td>1080p Full HD対応 高画質USBカメラ</td>
             </tr>
         </table>
 
         <div class="section-title">📥 ダウンロード</div>
         <p>フォームから利用申請をお願いします。<br>利用申請が完了し、利用者資格を満たしている者と確認できましたら、入力されたメールアドレス宛にダウンロードリンクを送付します。</p>
-        <p>⚠️現在提供準備中です。</p>
         <a class="download-btn" href="https://forms.gle/zBkWD56zqQSj91559">➡ 利用申請はこちら</a>
 
         <div class="section-title">利用者条件・規約</div>
         <p>本システムは、以下の条件を満たす教育機関の関係者に提供されます。</p>
 
         <ol>
-            <li><strong>利用者資格</strong><br>利用者は、以下の条件を満たす者に限られます：<br>
+            <li><strong>利用者資格</strong><br>
                 教育機関に所属している者（例：高校、大学、専門学校等の教職員または学生）<br>
-                非営利目的での使用に限ります。本システムは営利目的で使用することはできません。
+                非営利目的での使用に限ります。
             </li>
-            <li><strong>ライセンス</strong><br>本システムの全ての著作権およびライセンスは、提供者に帰属します。<br>
-                教育機関に所属する者に対してのみ使用許可を与えます。営利目的での使用は禁じられています。<br>
-                改変禁止: 本システムのソースコードや構成を変更、再配布することはできません。
+            <li><strong>著作権・ライセンス</strong><br>
+                本ソフトウェアの著作権は開発者に帰属します。<br>
+                商用利用は不可です。商用利用を希望する場合はお問い合わせください。<br>
+                教育機関に所属する者に対してのみ使用許可を与えます。
             </li>
-            <li><strong>使用範囲</strong><br>本システムは、教育機関内での使用に限られ、個人または営利団体への提供はできません。<br>
-                教育機関のイベントや活動においてのみ使用を許可します。<br>
-                使用においては、以下の制限があります：<br>
-                文化祭・その他イベントにおける費用回収は、印刷用紙代、インク代、装飾費用等、実際にかかった経費を超えてはいけません。過剰な金額を回収することは禁止されています。
+            <li><strong>使用範囲・制限</strong><br>
+                本システムは、教育機関内での使用に限られます。<br>
+                許可した機関以外の第三者に本ソフトウェア（ライセンスキー含む）を譲渡・提供しないでください。<br>
+                文化祭・その他イベントにおける費用回収は、印刷用紙代、インク代、装飾費用等、実際にかかった経費を超えてはいけません。
             </li>
-            <li><strong>禁止事項</strong><br>本システムの商業目的での利用、販売、配布は禁止されています。<br>
-                教育機関外での利用、または教育機関以外の個人による使用は認められていません。<br>
-                申請された機関以外の第三者には提供できません。<br>
-                本システムを改変、再配布、または商業的な目的で使用することは固く禁止されています。<br>
-                本規約を遵守し、適切な利用をお願いいたします。
+            <li><strong>禁止事項</strong><br>
+                本ソフトウェアの改変・再配布は禁止です。<br>
+                本ソフトウェア自体やフレーム作成等に関する内容を放送・掲載する場合は事前にお問い合わせください。<br>
+                利用者は、法令や公序良俗に反しない形で本アプリを利用してください。<br>
+                利用にあたり、著作権や知的財産権を侵害しない範囲でご利用ください。
+            </li>
+            <li><strong>規約違反・ペナルティ</strong><br>
+                規約違反が判明した場合、ライセンスキーを無効化する場合があります。
+            </li>
+            <li><strong>撮影画像の利用</strong><br>
+                撮影した画像の利用については自由です。<br>
+                ぜひ学校だよりや記事などにお使いください。紹介する際に、もしよろしければこのサイトのリンクもご紹介いただけますと幸いです。
             </li>
         </ol>
 
@@ -248,19 +395,27 @@
         <p>本システムは教育機関向けに無償提供されており、利用に際して以下の点をご理解ください。</p>
 
         <ol>
-            <li><strong>損害について</strong><br>本システムの使用または使用不能から生じる、いかなる直接的・間接的な損害についても、開発者は一切の責任を負いません。</li>
-            <li><strong>データの管理について</strong><br>本システムを利用することで作成・保存された画像データの管理は利用者の責任で行ってください。<br>
+            <li><strong>損害について</strong><br>
+                本ソフトウェアの利用・利用不能によるいかなる損害も、開発者は一切の責任を負いません。
+            </li>
+            <li><strong>データの管理について</strong><br>
+                本システムを利用することで作成・保存された画像データの管理は利用者の責任で行ってください。<br>
                 万が一、画像データの流出や不正利用が発生した場合でも、開発者は責任を負いかねます。
             </li>
-            <li><strong>システムの安定性について</strong><br>本システムは十分なテストを行ったうえで公開されていますが、完全な動作を保証するものではありません。<br>
+            <li><strong>システムの安定性について</strong><br>
+                本システムは十分なテストを行ったうえで公開されていますが、完全な動作を保証するものではありません。<br>
                 不具合やエラーが発生した場合、開発者はその修正義務を負うものではありません。
             </li>
-            <li><strong>使用条件</strong><br>本システムを利用することで、上記免責事項に同意したものとみなします。</li>
+            <li><strong>使用条件</strong><br>
+                本システムを利用することで、上記免責事項に同意したものとみなします。
+            </li>
         </ol>
 
-        <p><span style="color: rgb(255, 83, 83);"><strong>注意</strong></span><br>
-           本システムの利用前に、個人情報や画像データの取り扱いについて十分ご確認ください。<br>
-           教育機関やイベント主催者が適切なセキュリティ対策を講じることを推奨します。</p>
+        <div class="highlight-box">
+            <p><span style="color: rgb(255, 83, 83);"><strong>⚠️ 注意</strong></span><br>
+               本システムの利用前に、個人情報や画像データの取り扱いについて十分ご確認ください。<br>
+               教育機関やイベント主催者がインターネット等、適切なセキュリティ対策を講じることを推奨します。</p>
+        </div>
          
 
         <footer>

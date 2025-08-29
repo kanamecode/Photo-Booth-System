@@ -124,22 +124,6 @@
 - 教育機関やイベント主催者が適切なセキュリティ対策を講じることを推奨します。
 
 
-## 🎨 スクリーンショット
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="assets/capture.png" alt="設定画面" width="300">
-      <p>⚙️ 設定画面</p>
-    </td>
-    <td align="center">
-      <img src="assets/customize.png" alt="フレーム選択画面" width="600">
-      <p>🖼️ フレーム選択画面</p>
-    </td>
-  </tr>
-</table>
-
-
 ---
 
 
